@@ -1,17 +1,11 @@
-import './App.css';
-import React from 'react';
-import Card from './components/Card'
-import data from './assets/data.json'
+import UserList from "./components/UserList";
+import "./App.css";
+// import data from "./assets/data.json";
 
 function App() {
-  return (
-    <div className='Container'>
-      {
-        data.length && data.map((el, index) =>{
-          return <Card key = {index} data = {el}></Card>
-        })                  
-      }
-    </div>
-  )
+  return <div className="container">
+    <UserList/>
+  </div>;
 }
-export default App
+
+export default App;
